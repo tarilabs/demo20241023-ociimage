@@ -7,4 +7,5 @@ buildah push quay.io/mmortari/demo20241023-ociimage:v1
 
 podman build --no-cache -f Containerfile --layers --layer-label matteo=matteo --annotation xyz=xyz --label abc=abc --format oci -t quay.io/mmortari/demo20241023-ociimage:v1 .
 podman push quay.io/mmortari/demo20241023-ociimage:v1
+
 skopeo inspect docker://quay.io/mmortari/demo20241023-ociimage:v1 | jq
