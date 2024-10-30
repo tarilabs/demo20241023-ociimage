@@ -4,4 +4,4 @@ COPY mnist.onnx models/mnist.onnx
 
 FROM step1
 
-COPY README.md README.md
+COPY INFO.md models/README.md
